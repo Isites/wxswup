@@ -11,7 +11,7 @@ import com.wx.msgimpl.RecvTextMessage;
 import com.wx.msgimpl.WXMessage;
 import com.wx.util.Constan;
 
-public class InterceptEventBind implements InterceptHandle {
+public class InterceptEventBind implements InterceptEventHandle {
 
 	//用来控制开始绑定和准备绑定
 	private String contrl;
@@ -21,6 +21,7 @@ public class InterceptEventBind implements InterceptHandle {
 		this.contrl = control;
 	}
 	//用于判定所属菜单的类型
+	@Override
 	public int getMenuItem(){
 		return Constan.INITIAL_STATUS;
 	}
