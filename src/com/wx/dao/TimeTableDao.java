@@ -26,7 +26,6 @@ public class TimeTableDao {
 	}
 	
 	//得到今日的课程和明天的课程，如果是周六周日则返回休息
-	
 	public String getTimeTable(String academy){
 		if(curr % 6 == 0){
 			return "今天是周末，出去活动活动放松一下吧！^_^";
@@ -62,7 +61,6 @@ public class TimeTableDao {
 		}
 		return null;
 	}	
-	
 	
 //	public static void main(String[] args) {
 //		MySQLManager manager = MySQLHelper.getManager();

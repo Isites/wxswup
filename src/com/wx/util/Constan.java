@@ -93,7 +93,7 @@ public class Constan {
 	}
 		
 	public class QueryRoom{
-		//用户从主菜单进入自习室查询自菜单，向用户发送自习室查询
+		//用户从主菜单进入自习室查询子菜单，向用户发送自习室查询
 		public final static int ROOM_SUB = 40;
 		//处理用户的错误输入
 		public final static int ROOM_ERROR = 41;
@@ -104,10 +104,38 @@ public class Constan {
 	}
 
 	//考试安排50
+	public class QueryExamPlan{
+		//用户从主菜单进入考试安排查询的子菜单，向用户发送考试安排查询结果
+		public final static int EXAM_SUB = 50;
+		
+		
+		//考试安排所能达到的最大状态
+		public final static int EXAM_MAX = 59;
+	}
+	
+	
+	
 	//招就信息60
+	public class WorkInfo{
+		public final static int WORK_SUB = 60;
+		public final static int WORK_MAX = 69;
+	}
+	
 	//公共选课70
+	public class QueryGX{
+		public final static int GX_SUB = 70;
+		public final static int GX_MAX = 79;
+	}
 	//公交路线80
+	public class BusRoute{
+		public final static int BUS_SUB = 80;
+		public final static int BUS_MAX = 89;
+	}
 	//周边美食90
+	public class FoodInfo{
+		public final static int FOOD_SUB = 90;
+		public final static int FOOD_MAX = 99;
+	}
 	//留言表白和人工服务待定，用连接好了
 	
 	

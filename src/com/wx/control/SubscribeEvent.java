@@ -19,8 +19,7 @@ public class SubscribeEvent implements MsgHandle {
 	+"【1】成绩查询\n"
 	+"【2】课表查询\n"
 	+"【3】公告查询\n"
-	+"【4】自习室查询\n"
-	+"后续功能持续更新中，敬请期待！";
+	+"【4】自习室查询";
 	
 	
 	

@@ -32,9 +32,9 @@ public class ClimbNotice {
 		SaeFetchurl fetchurl = null;
 		System.out.println("创建连接");
 		try {
-			fetchurl = new SaeFetchurl(); 
-					//new SaeFetchurl("o33kyll02o",
-					//"001yz44i0j0jixyijzjw32ym1w53xj4j21klxl55");
+			fetchurl = //new SaeFetchurl(); 
+					new SaeFetchurl("o33kyll02o",
+					"001yz44i0j0jixyijzjw32ym1w53xj4j21klxl55");
 			fetchurl.setMethod("get");
 			System.out.println("抓取网页");
 			html = fetchurl.fetch(address);
@@ -69,9 +69,8 @@ public class ClimbNotice {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		new ClimbNotice();
-	}
+//	public static void main(String[] args) {
+//		new ClimbNotice();
+//	}
 
 }

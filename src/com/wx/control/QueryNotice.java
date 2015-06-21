@@ -101,8 +101,8 @@ public class QueryNotice implements MsgHandle {
 		item1.setUrl("http://jwc.swpu.edu.cn/");
 		item1.setDescription("西南石油大学成立于....");
 		item1.setPicUrl("http://wxswup-img.stor.sinaapp.com/res/jwc.png");
-		imgarticl.getArticles().add(item1);
-		
+		//imgarticl.getArticles().add(item1);
+		imgarticl.addArticles(item1);
 		
 		while(it.hasNext()){
 			String key = it.next();
@@ -112,7 +112,8 @@ public class QueryNotice implements MsgHandle {
 			item.setUrl(url);
 			item.setDescription("");
 			item.setPicUrl("http://wxswup-img.stor.sinaapp.com/res/tb.png");
-			imgarticl.getArticles().add(item);	
+			//imgarticl.getArticles().add(item);
+			imgarticl.addArticles(item);
 		}		
 		
 		System.out.println(imgarticl.toString());
