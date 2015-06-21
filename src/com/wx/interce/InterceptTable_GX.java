@@ -37,8 +37,9 @@ public class InterceptTable_GX implements InterceptEventHandle {
 			}
 			else {
 				if((curr+1)%2 == 0){
+					reply = "";
 					reply += "你今天公选课有：\n";
-					reply = exam[curr/2];
+					reply += exam[curr/2];
 				}
 				else{
 					reply = "你今晚没有公选课啦，好好休息吧！^_^";

@@ -57,7 +57,9 @@ public class EventMsgInterceptor implements MsgHandle,InterceptEventHandle {
 		
 		group.add(new InterceptEventExamPlan());
 		group.add(new InterceptTable_GX());
-		
+		group.add(new InterceptEventBus());
+		group.add(new InterceptEventWork());
+		group.add(new InterceptEventFood());
 	}
 	
 	

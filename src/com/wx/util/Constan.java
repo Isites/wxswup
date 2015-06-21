@@ -116,15 +116,26 @@ public class Constan {
 	
 	
 	//招就信息60
+	public class WorkInfo{
+		public final static int WORK_SUB = 60;
+		public final static int WORK_MAX = 69;
+	}
+	
 	//公共选课70
 	public class QueryGX{
 		public final static int GX_SUB = 70;
 		public final static int GX_MAX = 79;
 	}
-	
-	
 	//公交路线80
+	public class BusRoute{
+		public final static int BUS_SUB = 80;
+		public final static int BUS_MAX = 89;
+	}
 	//周边美食90
+	public class FoodInfo{
+		public final static int FOOD_SUB = 90;
+		public final static int FOOD_MAX = 99;
+	}
 	//留言表白和人工服务待定，用连接好了
 	
 	

@@ -3,20 +3,20 @@ package com.wx.dao;
 
 public abstract class MySQLHelper {
 	//主库域名
-	private String rurl =  //"jdbc:mysql://r.rdc.sae.sina.com.cn:3307/app_wxswup";
-	"jdbc:mysql://localhost:3306/swpu";
+	private String rurl =  "jdbc:mysql://r.rdc.sae.sina.com.cn:3307/app_wxswup";
+	//"jdbc:mysql://localhost:3306/swpu";
 	//从库域名
-	private String wurl = //"jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_wxswup";
-			"jdbc:mysql://localhost:3306/swpu"; 
+	private String wurl = "jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_wxswup";
+			//"jdbc:mysql://localhost:3306/swpu"; 
 			
 	private String driver = "com.mysql.jdbc.Driver";
 	
 	private String user = 
-			"root"; 
-			//"o33kyll02o";
+			//"root"; 
+			"o33kyll02o";
 	private String pwd = 
-			"";
-	//"001yz44i0j0jixyijzjw32ym1w53xj4j21klxl55";
+			//"";
+	"001yz44i0j0jixyijzjw32ym1w53xj4j21klxl55";
 	
 	public MySQLHelper(){
 		//加载驱动器

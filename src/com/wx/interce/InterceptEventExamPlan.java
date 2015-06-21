@@ -37,8 +37,9 @@ public class InterceptEventExamPlan implements InterceptEventHandle {
 		}
 		else {
 			if((curr+1)%2 == 0){
+				reply = "";
 				reply += "你今天的考试有：\n";
-				reply = exam[curr/2];
+				reply += exam[curr/2];
 			}
 			else{
 				reply = "你今天没有考试啦，好好休息吧！^_^";

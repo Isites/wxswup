@@ -74,12 +74,12 @@ public class ImageArticleMessage extends WXMessage {
 		ArticleCount = articleCount;
 	}
 
-	public List<Item> getArticles() {
-		return Articles;
-	}
+//	public List<Item> getArticles() {
+//		return Articles;
+//	}
 
-	public void setArticles(List<Item> articles) {
-		Articles = articles;
+	public void addArticles(Item article) {
+		Articles.add(article);
 	}
 }
 
