@@ -56,8 +56,8 @@ public class QueryGrade implements MsgHandle{
 	//回到了主菜单
 	private void enterInitMenu(){
 		System.out.println("回到主菜单");
-		Connection rcon = sqlm.getRConnection();
-		UserInfoDao uidao = new UserInfoDao(rcon); 
+		Connection wcon = sqlm.getWConnection();
+		UserInfoDao uidao = new UserInfoDao(wcon); 
 		result = "请选择【】中的数字，选择您想要的服务。\n"
 				+"【1】成绩查询\n"
 				+"【2】课表查询\n"
@@ -111,16 +111,20 @@ public class QueryGrade implements MsgHandle{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		sqlm.close(rcon);
 		//最后要更新用户的当前状态
-		uidao.updateStatus(Constan.QueryGradeStatus.GRADE_DETAIL,
+		Connection wcon = sqlm.getWConnection();
+		UserInfoDao uidao1 = new UserInfoDao(wcon);
+		uidao1.updateStatus(Constan.QueryGradeStatus.GRADE_DETAIL,
 				recv.getFromUserName());
+		sqlm.close(wcon);
 		
 	}
 	//用户输入错误时
 	private void enterError(){
 		result = "你的输入有误请回复【】中的值！";
-		Connection rcon = sqlm.getRConnection();
-		UserInfoDao uidao = new UserInfoDao(rcon);
+		Connection wcon = sqlm.getWConnection();
+		UserInfoDao uidao = new UserInfoDao(wcon);
 		uidao.updateStatus(Constan.QueryGradeStatus.GRADE_ERROR,
 				recv.getFromUserName());
 	}

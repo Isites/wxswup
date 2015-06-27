@@ -73,8 +73,8 @@ public class QueryClassroom implements MsgHandle {
 		private void enterInitMenu(){
 			System.out.println("从课表进入主菜单");
 			
-			Connection rcon = sqlm.getRConnection();
-			UserInfoDao uidao = new UserInfoDao(rcon); 
+			Connection wcon = sqlm.getWConnection();
+			UserInfoDao uidao = new UserInfoDao(wcon); 
 			result = "请选择【】中的数字，选择您想要的服务。\n"
 					+"【1】成绩查询\n"
 					+"【2】课表查询\n"

@@ -33,13 +33,16 @@ public class InterceptTable_GX implements InterceptEventHandle {
 					: cal.get(Calendar.DAY_OF_WEEK)-1;
 			
 			if(curr % 6 == 0){
-				reply =  "今天是周末，出去活动活动放松一下吧！^_^";
+				reply =  "今天是周末，没有公选课安排，出去活动活动放松一下吧！^_^";
 			}
 			else {
-				if((curr+1)%2 == 0){
+				//只有周2和周4可以
+				if((curr)%2 == 0){
 					reply = "";
 					reply += "你今天公选课有：\n";
-					reply += exam[curr/2];
+					int tmp = curr/2;
+					//tmp = Math.min(tmp, 1);
+					reply += exam[tmp-1];
 				}
 				else{
 					reply = "你今晚没有公选课啦，好好休息吧！^_^";
